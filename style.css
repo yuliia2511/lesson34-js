@@ -1,0 +1,146 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    color: beige;
+    margin: 0 auto;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+h4 {
+    font-family: 'Anton', sans-serif;
+    font-size: 100px;
+    color: indianred;
+    margin: 0 auto;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+#library {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    color: #434738;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+
+}
+
+#openBtn {
+    font-family: 'Signika Negative', sans-serif;
+    color: #434738;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: beige;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    border-radius: 20px;
+    background: beige;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    width: 80%;
+    display: flex;
+}
+
+#display {
+    width: 60%;
+    border-radius: 20px 0 0 20px;
+    background: #e5eec1;
+    backdrop-filter: blur(30px) hue-rotate(20deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+}
+
+#art {
+    height: 200px;
+    margin: 0 auto;
+}
+
+#item {
+    width: 40%;
+    border-radius: 0 20px 20px 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding: 0 1em;
+    transition: all .3s ease;
+}
+
+.item:first-of-type {
+    border-radius: 0 20px 0 0;
+}
+
+.item:last-of-type {
+    border-radius: 0 0 20px 0;
+}
+
+.modal-content #list .item.is-active {
+    background: #e5eec1;
+    border-radius: 0 20px 20px 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 5vh;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h3 {
+    font-family: 'Anton', sans-serif;
+    color: #434738;
+}
+
+p {
+    font-family: 'Signika Negative', sans-serif;
+    color:
+}
