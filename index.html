@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Signika+Negative:wght@300&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <h2>The Hits Through Decades</h2>
+    <h4>Classic Rock</h4>
+    <ol id="library"></ol>
+
+    <button id="openBtn"><span class="material-icons">play_arrow</span>Play</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="display">
+                <div id="header">
+                    <h1 id="title"></h1>
+                    <p>
+                        <span id="song-title"></span>
+                    </p>
+                </div>
+                <div id="image">
+                    <img src="" alt="" id="art">
+                </div>
+                <audio controls src="" id="audio"></audio>
+            </div>
+            <div id="list"></div>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+</body>
+
+</html>
